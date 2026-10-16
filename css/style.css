@@ -1,0 +1,11 @@
+html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+body { display: grid; place-items: center; }
+#screen { display: block; image-rendering: pixelated; image-rendering: crisp-edges; }
+/* focus goes back to the canvas when a plate closes; keys are read on the window, so no ring is needed (or wanted) */
+#screen:focus { outline: none; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+#stage { position: relative; display: grid; place-items: center; }
+#ui { position: absolute; inset: 0; margin: auto; pointer-events: none; }

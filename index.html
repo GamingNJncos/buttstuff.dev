@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2MCP · Department of Integration Decisions</title>
+<meta name="description" content="To MCP or not to MCP. A walk-around pixel facility that decides whether your thing should be an MCP server, a skill, a script, or a hook.">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16.png">
+<link rel="stylesheet" href="./css/style.css?v=68">
+<link rel="stylesheet" href="./css/ui.css?v=68">
+</head>
+<body>
+<a class="sr-only" href="#directory">Skip to the text directory</a>
+<div id="stage">
+  <canvas id="screen" tabindex="-1" role="img" aria-label="A side-view pixel-art facility that decides whether you need an MCP server. A text version is in the directory."></canvas>
+  <div id="ui" aria-live="polite"></div>
+</div>
+<main id="directory" class="sr-only">
+  <!-- filled at startup from the game's data by js/logic/directory.js -->
+  <h1>2MCP · Department of Integration Decisions</h1>
+</main>
+<script type="module" src="./js/main.js?v=68"></script>
+</body>
+</html>
